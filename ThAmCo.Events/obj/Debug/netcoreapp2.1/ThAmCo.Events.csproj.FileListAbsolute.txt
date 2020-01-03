@@ -95,3 +95,13 @@ C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Even
 C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\ThAmCo.Events.pdb
 C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\ThAmCo.Events.csproj.CopyComplete
 C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\GuestBooking\EventIndex.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staffing\Create.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staffing\Delete.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staffing\Details.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staffing\Edit.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staffing\Index.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staff\Create.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staff\Delete.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staff\Details.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staff\Edit.cshtml.g.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Events\obj\Debug\netcoreapp2.1\Razor\Views\Staff\Index.cshtml.g.cs

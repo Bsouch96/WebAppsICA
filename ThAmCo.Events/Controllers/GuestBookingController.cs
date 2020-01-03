@@ -172,6 +172,7 @@ namespace ThAmCo.Events.Controllers
                 .Include(g => g.Customer)
                 .Include(g => g.Event)
                 .FirstOrDefaultAsync(m => m.CustomerId == id);
+
             if (guestBooking == null)
             {
                 return NotFound();
@@ -186,6 +187,7 @@ namespace ThAmCo.Events.Controllers
                 .Include(g => g.Customer)
                 .Include(g => g.Event)
                 .FirstOrDefaultAsync(m => m.CustomerId == cId && m.EventId == eId);
+
             if (guestBooking == null)
             {
                 return NotFound();

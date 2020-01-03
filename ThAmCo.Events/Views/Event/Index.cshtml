@@ -47,7 +47,8 @@
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
                 <a asp-controller="GuestBooking" asp-action="Create" asp-route-eventID="@item.Id">Add Guest</a> |
-                <a asp-controller="GuestBooking" asp-action="EventIndex" asp-route-id="@item.Id">List Guests</a>
+                <a asp-controller="GuestBooking" asp-action="EventIndex" asp-route-id="@item.Id">List Guests</a> |
+                <a asp-controller="Staffing" asp-action="StaffingIndex" asp-route-id="@item.Id">List Staff</a>
             </td>
         </tr>
 }

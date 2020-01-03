@@ -1,0 +1,16 @@
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\bin\Debug\netcoreapp2.1\ThAmCo.Catering.deps.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\bin\Debug\netcoreapp2.1\ThAmCo.Catering.runtimeconfig.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\bin\Debug\netcoreapp2.1\ThAmCo.Catering.runtimeconfig.dev.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\bin\Debug\netcoreapp2.1\ThAmCo.Catering.dll
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\bin\Debug\netcoreapp2.1\ThAmCo.Catering.pdb
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\obj\Debug\netcoreapp2.1\ThAmCo.Catering.csprojAssemblyReference.cache
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\obj\Debug\netcoreapp2.1\ThAmCo.Catering.RazorAssemblyInfo.cache
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\obj\Debug\netcoreapp2.1\ThAmCo.Catering.RazorAssemblyInfo.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\obj\Debug\netcoreapp2.1\ThAmCo.Catering.AssemblyInfoInputs.cache
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\obj\Debug\netcoreapp2.1\ThAmCo.Catering.AssemblyInfo.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\obj\Debug\netcoreapp2.1\ThAmCo.Catering.RazorTargetAssemblyInfo.cache
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\obj\Debug\netcoreapp2.1\ThAmCo.Catering.dll
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Catering\obj\Debug\netcoreapp2.1\ThAmCo.Catering.pdb

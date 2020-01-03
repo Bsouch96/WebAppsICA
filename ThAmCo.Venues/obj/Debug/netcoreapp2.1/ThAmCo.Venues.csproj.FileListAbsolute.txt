@@ -1,0 +1,16 @@
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\bin\Debug\netcoreapp2.1\ThAmCo.Venues.deps.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\bin\Debug\netcoreapp2.1\ThAmCo.Venues.runtimeconfig.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\bin\Debug\netcoreapp2.1\ThAmCo.Venues.runtimeconfig.dev.json
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\bin\Debug\netcoreapp2.1\ThAmCo.Venues.dll
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\bin\Debug\netcoreapp2.1\ThAmCo.Venues.pdb
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\obj\Debug\netcoreapp2.1\ThAmCo.Venues.csprojAssemblyReference.cache
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\obj\Debug\netcoreapp2.1\ThAmCo.Venues.RazorAssemblyInfo.cache
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\obj\Debug\netcoreapp2.1\ThAmCo.Venues.RazorAssemblyInfo.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\obj\Debug\netcoreapp2.1\ThAmCo.Venues.AssemblyInfoInputs.cache
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\obj\Debug\netcoreapp2.1\ThAmCo.Venues.AssemblyInfo.cs
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\obj\Debug\netcoreapp2.1\ThAmCo.Venues.RazorTargetAssemblyInfo.cache
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\obj\Debug\netcoreapp2.1\ThAmCo.Venues.dll
+C:\Users\Souchys\Desktop\Uni\Year 2\Web Apps and Services\WebAppsICA\ThAmCo.Venues\obj\Debug\netcoreapp2.1\ThAmCo.Venues.pdb
