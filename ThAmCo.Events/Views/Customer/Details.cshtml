@@ -1,7 +1,6 @@
-﻿@model ThAmCo.Events.Data.Customer
+﻿@model ThAmCo.Events.Models.CustomerViewModel
 
 @{
-    ViewData["Title"] = "Details";
 }
 
 <h2>Details</h2>
@@ -11,22 +10,17 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Surname)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Surname)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
+            Customer Full Name
         </dt>
         <dd>
             @Html.DisplayFor(model => model.FirstName)
+            @Html.DisplayFor(model => model.Surname)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Email)
+            Customer Email Address
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Email)
+            @Html.DisplayFor(model => model.CustomerEmailAddress)
         </dd>
     </dl>
 </div>
@@ -40,37 +34,31 @@
                 <th>
                     Event Date
                 </th>
-                <th>
-                    Attended
-                </th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.Bookings) //Loops through each customer booking and displays event title, date and attended.
+            @foreach (var item in Model.Event) //Loops through each customer booking and displays event title, date and attended.
             {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Event.Title)
+                    @Html.DisplayFor(modelItem => item.Title)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Event.Date)
+                    @Html.DisplayFor(modelItem => item.Date)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Attended)
-                </td>
-                <td>
+                @*<td>
                     @Html.ActionLink("Details", "Details", "Event", new { id = item.EventId })
                 </td>
                 <td>
                     @Html.ActionLink("Delete", "DeleteCustomerBooking", "GuestBooking", new { eId = item.EventId , cId = item.CustomerId})
-                </td>
+                </td>*@
             </tr>
             }
         </tbody>
     </table>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model.CustomerID">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

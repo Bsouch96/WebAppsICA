@@ -32,10 +32,65 @@ namespace ThAmCo.Events.Controllers
                 return NotFound();
             }
 
-            var @event = await _context.Events
-                .Include(b => b.Bookings)
-                .ThenInclude(c => c.Customer)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var @event = await _context.Events.Select(e => new Models.EventViewModel
+            {
+                EventID = e.Id,
+                EventTitle = e.Title,
+                Date = e.Date,
+                Duration = e.Duration,
+                TypeId = e.TypeId,
+                NumberOfGuests = _context.Guests.Where(g => g.EventId == e.Id).Count(),
+                NumberOfStaff = _context.Staffings.Where(g => g.StaffID == e.Id).Count(),
+
+                Guests = _context.Guests.Where(g => g.EventId == e.Id).Select(g => new Models.GuestViewModel
+                {
+                    GuestID = g.Customer.Id,
+                    FullName = g.Customer.FirstName + " " + g.Customer.Surname,
+                    GuestEmail = g.Customer.Email,
+                    Attended = g.Attended
+                }),
+
+                Staff = _context.Staffings.Where(g => g.EventID == e.Id).Select(g => new Models.StaffViewModel
+                { 
+                    StaffID = g.Staff.StaffID,
+                    FullName = g.Staff.StaffFirstName + " " + g.Staff.StaffSurname,
+                    StaffEmail = g.Staff.StaffEmail,
+                    FirstAider = g.Staff.FirstAider
+                })
+               
+            }).FirstOrDefaultAsync(m => m.EventID == id);
+
+            var GuestList = _context.Guests.Where(g => g.EventId == @event.EventID);
+            var StaffList = _context.Staffings.Where(g => g.EventID == @event.EventID);
+            int guestCount = GuestList.Count();
+            int staffCount = StaffList.Count();
+            if (staffCount > 0 && staffCount >= (guestCount / 10))
+            {
+                @event.SufficientStaffMessage = "Sufficient Staff Present";
+                @event.SufficientStaff = false;
+            }
+            else
+            {
+                @event.SufficientStaffMessage = "Insufficient Staff Present";
+                @event.SufficientStaff = true;
+            }
+
+            if (StaffList.Where(f => f.Staff.FirstAider).Count() > 0)
+            {
+                @event.FirstAiderMessage = "First Aider Present";
+                @event.FirstAiderPresent = false;
+            }
+            else
+            {
+                @event.FirstAiderMessage = "No First Aider Present";
+                @event.FirstAiderPresent = true;
+            }
+
+            if (@event == null)
+            {
+                return NotFound();
+            }
+
             if (@event == null)
             {
                 return NotFound();

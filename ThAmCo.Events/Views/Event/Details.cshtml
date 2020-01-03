@@ -1,82 +1,87 @@
-﻿@model ThAmCo.Events.Data.Event
+﻿@model ThAmCo.Events.Models.EventViewModel
 
-@{
-    ViewData["Title"] = "Details";
-}
+<h2>@Model.EventTitle Details</h2>
 
-<h2>Details</h2>
-
-<div>
-    <h4>Event</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Duration)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Duration)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.TypeId)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.TypeId)
-        </dd>
-    </dl>
-</div>
-<div>
-    <table class="table">
-        <thead>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Event Details</h4>
+        <table class="table">
             <tr>
-                <th>
-                    Guest Name
-                </th>
-                <th>
-                    Guest Email
-                </th>
-                <th>
-                    Attended
-                </th>
-                <th></th>
+                <th>Event Title</th>
+                <th>Event Date</th>
+                <th>Event Duration</th>
+                <th>Event Type Id</th>
+                <th>Event Guest Count</th>
+                <th>Event Staff Count</th>
+                <th>Staff</th>
+                <th>First Aider</th>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Bookings) //Loops through each customer booking and displays event title, date and attended.
-            {
+            <tr>
+                <td>@Html.DisplayFor(model => model.EventTitle)</td>
+                <td>@Html.DisplayFor(model => model.Date)</td>
+                <td>@Html.DisplayFor(model => model.Duration)</td>
+                <td>@Html.DisplayFor(model => model.TypeId)</td>
+                <td>@Html.DisplayFor(model => model.NumberOfGuests)</td>
+                <td>@Html.DisplayFor(model => model.NumberOfStaff)</td>
+                <td>
+                    @if (Model.SufficientStaff == true)
+                    {@Html.DisplayFor(model => model.SufficientStaffMessage)}
+                else
+                {@Html.DisplayFor(model => model.SufficientStaffMessage)}
+                </td>
+                <td>
+                    @if (Model.SufficientStaff == true)
+                    {@Html.DisplayFor(model => model.FirstAiderMessage)}
+                else
+                {@Html.DisplayFor(model => model.FirstAiderMessage)}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-12">
+        <h4>Staff Details</h4>
+        @if (Model.Staff.Any())
+        {
+            <table class="table">
                 <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Customer.FirstName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Customer.Email)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Attended)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Details", "Details", "Customer", new { id = item.EventId })
-                    </td>
-                    <td>
-                        @Html.ActionLink("Delete", "DeleteCustomerBooking", "GuestBooking", new { eId = item.EventId, cId = item.CustomerId })
-                    </td>
+                    <th>Staff Full Name</th>
+                    <th>Guest Email</th>
+                    <th>First Aider</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+                @foreach (var item in Model.Staff)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(model => item.FullName)</td>
+                        <td>@Html.DisplayFor(model => item.StaffEmail)</td>
+                        <td>@Html.DisplayFor(model => item.FirstAider)</td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
 </div>
+    <div class="col-md-12">
+        <h4>Customer Details</h4>
+        @if (Model.Guests.Any())
+        {
+            <table class="table">
+                <tr>
+                    <th>Guest Full Name</th>
+                    <th>Guest Email</th>
+                    <th>Guest Attended</th>
+                </tr>
+                @foreach (var item in Model.Guests)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(model => item.FullName)</td>
+                        <td>@Html.DisplayFor(model => item.GuestEmail)</td>
+                        <td>@Html.DisplayFor(model => item.Attended)</td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model.EventID">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

@@ -73,7 +73,7 @@ using ThAmCo.Events.Models;
             WriteLiteral("</p>\r\n</div>\r\n<p>\r\n    ");
             EndContext();
             BeginContext(185, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec9e6534351c4fb4ba8d478fc0728b9a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ece1ba25ae084a9f801c446f64b61cff", async() => {
                 BeginContext(208, 10, true);
                 WriteLiteral("Create New");
                 EndContext();

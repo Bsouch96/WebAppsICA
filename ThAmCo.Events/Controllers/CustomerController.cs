@@ -33,10 +33,25 @@ namespace ThAmCo.Events.Controllers
             }
 
             //Grab booking and event information from specified customer (id). Returns null if not found.
-            var customer = await _context.Customers
-                .Include(b => b.Bookings)
-                .ThenInclude(e => e.Event)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var customer = await _context.Customers.Select(c => new Models.CustomerViewModel
+            {
+                CustomerID = c.Id,
+                FirstName = c.FirstName,
+                Surname = c.Surname,
+                CustomerEmailAddress = c.Email,
+
+                Event = _context.Guests.Where(e => e.CustomerId == c.Id).Select(s => new Event
+                { 
+                    Title = s.Event.Title,
+                    Date = s.Event.Date,
+                })  
+                
+            }).FirstOrDefaultAsync(m => m.CustomerID == id);
+
+            //var customer = await _context.Customers
+            //    .Include(b => b.Bookings)
+            //    .ThenInclude(e => e.Event)
+            //    .FirstOrDefaultAsync(m => m.Id == id);
 
             if (customer == null)
             {
