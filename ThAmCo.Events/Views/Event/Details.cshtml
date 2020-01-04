@@ -25,15 +25,15 @@
                 <td>@Html.DisplayFor(model => model.NumberOfStaff)</td>
                 <td>
                     @if (Model.SufficientStaff == true)
-                    {@Html.DisplayFor(model => model.SufficientStaffMessage)}
+                    {<font color="red">@Html.DisplayFor(model => model.SufficientStaffMessage)</font>}
                 else
-                {@Html.DisplayFor(model => model.SufficientStaffMessage)}
+                {<font color="green">@Html.DisplayFor(model => model.SufficientStaffMessage)</font>}
                 </td>
                 <td>
-                    @if (Model.SufficientStaff == true)
-                    {@Html.DisplayFor(model => model.FirstAiderMessage)}
+                    @if (Model.FirstAiderPresent == false)
+                    {<font color="red">@Html.DisplayFor(model => model.FirstAiderMessage)</font>}
                 else
-                {@Html.DisplayFor(model => model.FirstAiderMessage)}
+                {<font color="green">@Html.DisplayFor(model => model.FirstAiderMessage)</font>}
                 </td>
             </tr>
         </table>
@@ -42,21 +42,23 @@
         <h4>Staff Details</h4>
         @if (Model.Staff.Any())
         {
-            <table class="table">
-                <tr>
-                    <th>Staff Full Name</th>
-                    <th>Guest Email</th>
-                    <th>First Aider</th>
-                </tr>
-                @foreach (var item in Model.Staff)
-                {
-                    <tr>
-                        <td>@Html.DisplayFor(model => item.FullName)</td>
-                        <td>@Html.DisplayFor(model => item.StaffEmail)</td>
-                        <td>@Html.DisplayFor(model => item.FirstAider)</td>
-                    </tr>
-                }
-            </table>
+    <table class="table">
+        <tr>
+            <th>Staff Full Name</th>
+            <th>Guest Email</th>
+            <th>First Aider</th>
+            <th>Option</th>
+        </tr>
+        @foreach (var item in Model.Staff)
+        {
+    <tr>
+        <td>@Html.DisplayFor(model => item.FullName)</td>
+        <td>@Html.DisplayFor(model => item.StaffEmail)</td>
+        <td>@Html.DisplayFor(model => item.FirstAider)</td>
+        <td><a asp-area="" asp-controller="Staffing" asp-route-id="@item.StaffID" asp-action="Delete">Delete</a></td>
+    </tr>
+        }
+    </table>
         }
     </div>
 </div>
@@ -69,14 +71,16 @@
                     <th>Guest Full Name</th>
                     <th>Guest Email</th>
                     <th>Guest Attended</th>
+                    <th>Option</th>
                 </tr>
                 @foreach (var item in Model.Guests)
                 {
-                    <tr>
-                        <td>@Html.DisplayFor(model => item.FullName)</td>
-                        <td>@Html.DisplayFor(model => item.GuestEmail)</td>
-                        <td>@Html.DisplayFor(model => item.Attended)</td>
-                    </tr>
+            <tr>
+                <td>@Html.DisplayFor(model => item.FullName)</td>
+                <td>@Html.DisplayFor(model => item.GuestEmail)</td>
+                <td>@Html.DisplayFor(model => item.Attended)</td>
+                <td><a asp-area="" asp-controller="GuestBooking" asp-route-id="@item.GuestID"  asp-action="Delete">Delete</a></td>
+            </tr>
                 }
             </table>
         }

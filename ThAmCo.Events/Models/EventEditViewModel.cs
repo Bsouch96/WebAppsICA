@@ -11,8 +11,6 @@ namespace ThAmCo.Events.Models
 
         public string EventTitle { get; set; }
 
-        public DateTime EventDate { get; set; }
-
         public TimeSpan? EventDuration { get; set; }
 
     }

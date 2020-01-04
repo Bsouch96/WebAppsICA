@@ -1,4 +1,4 @@
-﻿@model ThAmCo.Events.Data.Staff
+﻿@model ThAmCo.Events.Models.StaffDetailsViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -11,30 +11,60 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.StaffSurname)
+            Staff Full Name
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.StaffSurname)
+            @Html.DisplayFor(model => model.FullName)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.StaffFirstName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.StaffFirstName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.StaffEmail)
+            Staff Email
         </dt>
         <dd>
             @Html.DisplayFor(model => model.StaffEmail)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.FirstAider)
+            First Aid Qualified
         </dt>
         <dd>
             @Html.DisplayFor(model => model.FirstAider)
         </dd>
     </dl>
+        <div class="col-md-12">
+            @if (Model.Events.Any())
+            {
+                <hr />
+                <h4>Events</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Event Title
+                            </th>
+                            <th>
+                                Event Date
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Events)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Title)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Date)
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p><br />@Model.FirstName @Model.Surname Is Not Booked Onto Any Events</p>
+            }
+            </div>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.StaffID">Edit</a> |

@@ -79,12 +79,12 @@ namespace ThAmCo.Events.Controllers
             if (StaffList.Where(f => f.Staff.FirstAider).Count() > 0)
             {
                 @event.FirstAiderMessage = "First Aider Present";
-                @event.FirstAiderPresent = false;
+                @event.FirstAiderPresent = true;
             }
             else
             {
                 @event.FirstAiderMessage = "No First Aider Present";
-                @event.FirstAiderPresent = true;
+                @event.FirstAiderPresent = false;
             }
 
             if (@event == null)
@@ -138,46 +138,9 @@ namespace ThAmCo.Events.Controllers
             return View(@event);
         }
 
-        //// POST: Events/Edit/5
-        //// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        //// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Edit(int id, [Bind("EventID,Title,Duration")] Event @event)
-        //{
-        //    if (id != @event.EventID)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    if (ModelState.IsValid)
-        //    {
-        //        try
-        //        {
-        //            var editEvent = await _context.Events.FindAsync(id);
-        //            editEvent.Title = @event.EventTitle;
-        //            editEvent.Duration = @event.EventDuration;
-        //            await _context.SaveChangesAsync();
-        //        }
-        //        catch (DbUpdateConcurrencyException)
-        //        {
-        //            if (!EventExists(@event.EventID))
-        //            {
-        //                return NotFound();
-        //            }
-        //            else
-        //            {
-        //                throw;
-        //            }
-        //        }
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(@event);
-        //}
-
-        //// POST: Event/Edit/5
-        //// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        //// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Event/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Date,Duration,TypeId")] Event @event)

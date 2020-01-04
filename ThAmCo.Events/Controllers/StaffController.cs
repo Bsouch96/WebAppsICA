@@ -44,10 +44,17 @@ namespace ThAmCo.Events.Controllers
                     Id = e.EventID,
                     Date = e.Event.Date,
                     Title = e.Event.Title
-                })
+                }).Where(w => w.Date >= DateTime.Now)
 
             }).FirstOrDefaultAsync(m => m.StaffID == id);
-            //
+
+            var currentDate = DateTime.Now;
+            //DateTime.Compare(DateTime, currentDate);
+
+            //var customers = _context.Customers.ToList();
+            //var bookedGuests = _context.Guests.Where(g => g.EventId == EventId).ToList();
+            //customers.RemoveAll(r => bookedGuests.Any(g => g.CustomerId == r.Id));
+
             if (staff == null)
             {
                 return NotFound();
