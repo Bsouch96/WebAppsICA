@@ -70,7 +70,7 @@ using ThAmCo.Events.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(118, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a26a45b6fec94b2299cb7714ab323479", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83791c0de15949e1ad34820dbc92038f", async() => {
                 BeginContext(141, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -180,7 +180,7 @@ using ThAmCo.Events.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1136, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "607674c0e9e948e9b7581900bcb6c0ae", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2ff0c7e983cd4be8a9c2081f8cde8837", async() => {
                 BeginContext(1181, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -215,7 +215,7 @@ using ThAmCo.Events.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1209, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0276d083457488a84a2c5efb751723e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a35699ad22d14c20b2fe320c8ca67b46", async() => {
                 BeginContext(1257, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -250,7 +250,7 @@ using ThAmCo.Events.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1288, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5983c524315944318881ac78f1a54f7c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c77d7cb95b8476b97189013f7bd34fe", async() => {
                 BeginContext(1335, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
@@ -285,7 +285,7 @@ using ThAmCo.Events.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1365, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74d5e17894c7455aa253f2b40a40644a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b35228c3fd24e5595c0c8787608a602", async() => {
                 BeginContext(1447, 9, true);
                 WriteLiteral("Add Guest");
                 EndContext();
@@ -322,7 +322,7 @@ using ThAmCo.Events.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1480, 96, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f79adf0b3c474ae6979dba38122888a1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2ac2c3d8d1b04e7f8bd9ec17ab91adac", async() => {
                 BeginContext(1561, 11, true);
                 WriteLiteral("List Guests");
                 EndContext();
@@ -359,7 +359,7 @@ using ThAmCo.Events.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1596, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53fabc92467a47beaa575ca5bcb71dd5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ffa644aba35481bbe11064f286068a4", async() => {
                 BeginContext(1676, 10, true);
                 WriteLiteral("List Staff");
                 EndContext();

@@ -24,7 +24,7 @@ namespace ThAmCo.Events.Controllers
             return View(await _context.Staffs.ToListAsync());
         }
 
-        // GET: Staff/Details/5
+        // GET: Staffs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,8 +32,22 @@ namespace ThAmCo.Events.Controllers
                 return NotFound();
             }
 
-            var staff = await _context.Staffs
-                .FirstOrDefaultAsync(m => m.StaffID == id);
+            var staff = await _context.Staffs.Select(m => new Models.StaffDetailsViewModel
+            {
+                StaffID = m.StaffID,
+                FullName = m.StaffFirstName + " " + m.StaffSurname,
+                StaffEmail = m.StaffEmail,
+                FirstAider = m.FirstAider,
+
+                Events = _context.Staffings.Where(s => s.StaffID == m.StaffID).Select(e => new Event
+                {
+                    Id = e.EventID,
+                    Date = e.Event.Date,
+                    Title = e.Event.Title
+                })
+
+            }).FirstOrDefaultAsync(m => m.StaffID == id);
+            //
             if (staff == null)
             {
                 return NotFound();
